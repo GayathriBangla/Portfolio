@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* Reset some default browser styles */
+        body, h1, h2, h3, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 1rem;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .hero {
+            background: url('hero.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 5rem 0;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .hero .btn {
+            background: #ff6347;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border: none;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+
+        main {
+            padding: 2rem 0;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .project {
+            flex: 1 1 calc(33.333% - 2rem);
+            margin: 1rem;
+            padding: 1rem;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .contact form label {
+            margin-top: 1rem;
+            text-align: left;
+        }
+
+        .contact form input, .contact form textarea {
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .contact form button {
+            background: #ff6347;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border: none;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer .social a {
+            color: #fff;
+            margin: 0 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">MyPortfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Hello, I'm [Your Name]</h1>
+            <p>A Creative Designer</p>
+            <a href="#portfolio" class="btn">View My Work</a>
+        </section>
+
+        <section id="about">
+            <h1>About Me</h1>
+            <img src="Screenshot.jpg" alt="Your Portrait" style="width: 150px; border-radius: 50%;">
+            <p></p>
+		<p>Hello! I am Chiliveri Sahasra, a dedicated and enthusiastic student. Currently, I'm pursuing my bachelors's in computer Science-Artificial Intelligence and Machine Learning at Malla reddy Engineering College For Women, where I am developing a strong foundation in design principles, programming and Algorithms.
+    </p>
+            <h2>Skills</h2>
+            <ul>
+                
+                <li>Web Technologies: HTML, CSS, JavaScript, PHP, </li>
+		<li>Programming Skills: C, Python, Java</li>
+		<li>Tools: Dev C++, Anaconda, Visual Studio code, Microsoft Tools, Brackets</li>
+		<li>Query Language: SQL(DMBS)
+                <!-- Add more skills -->
+            </ul>
+        </section>
+
+        <section id="portfolio">
+            <h1>My Work</h1>
+            <div class="projects">
+                <div class="project">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project Title 1</h3>
+                    <p>Detailed description of the project.</p>
+                </div>
+                <!-- Add more project items here -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h1>Contact Me</h1>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MyPortfolio. All rights reserved.</p>
+        <div class="social">
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </div>
+    </footer>
+</body>
+</html>
